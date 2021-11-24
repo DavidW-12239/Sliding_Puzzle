@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="Moves so far:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stepsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/textView1"
+            android:text=""
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            app:srcCompat="@drawable/img1" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            android:layout_toRightOf="@id/img1"
+            app:srcCompat="@drawable/img2" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            android:layout_toRightOf="@id/img2"
+            app:srcCompat="@drawable/img3" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            android:layout_toRightOf="@id/img3"
+            app:srcCompat="@drawable/img4" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img1"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            app:srcCompat="@drawable/img5" />
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img2"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            android:layout_toRightOf="@id/img5"
+            app:srcCompat="@drawable/img6" />
+
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img3"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            android:layout_toRightOf="@id/img6"
+            app:srcCompat="@drawable/img7" />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img4"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            android:layout_toRightOf="@id/img7"
+            app:srcCompat="@drawable/img8" />
+
+        <ImageView
+            android:id="@+id/img9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img5"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            app:srcCompat="@drawable/img9" />
+
+        <ImageView
+            android:id="@+id/img10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img6"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/img9"
+            android:onClick="move"
+            app:srcCompat="@drawable/img10" />
+
+        <ImageView
+            android:id="@+id/img11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img7"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/img10"
+            android:onClick="move"
+            app:srcCompat="@drawable/img11" />
+
+        <ImageView
+            android:id="@+id/img12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img8"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/img11"
+            android:onClick="move"
+            app:srcCompat="@drawable/img12" />
+
+        <ImageView
+            android:id="@+id/img13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img9"
+            android:layout_margin="5dp"
+            android:onClick="move"
+            app:srcCompat="@drawable/img13" />
+
+        <ImageView
+            android:id="@+id/img14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img10"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/img13"
+            android:onClick="move"
+            app:srcCompat="@drawable/img14" />
+
+        <ImageView
+            android:id="@+id/img15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img11"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/img14"
+            android:onClick="move"
+            app:srcCompat="@drawable/img15" />
+
+        <ImageView
+            android:id="@+id/img16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img12"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/img15"
+            android:onClick="move"
+            app:srcCompat="@drawable/blank" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/NewPuzzle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:onClick="NewPuzzle"
+            android:text="New Puzzle"/>
+
+        <Button
+            android:id="@+id/SolvePuzzle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/NewPuzzle"
+            android:onClick="SolvePuzzle"
+            android:text="Solve Puzzle"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NewPuzzle"
+            android:layout_margin="30dp"
+            android:text="" />
+    </RelativeLayout>
+
+
+</LinearLayout>
